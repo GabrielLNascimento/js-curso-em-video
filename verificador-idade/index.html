@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Verificar idade</title>
+</head>
+<style>
+    
+
+body {
+    background-color: rgb(135, 201, 224);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+header > h1 {
+    padding: 15px;
+} 
+
+section {
+    background-color: white;
+    width: 600px;
+    
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    
+}
+
+
+
+footer {
+    text-align: center;
+    margin-top: 75px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 400px;
+}
+
+#caixamsg, #caixafoto {
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+div#dados, div#res {
+    padding: 20px;
+    
+}
+
+#foto {
+    width: 200px;
+    margin-left: 180px;
+}
+
+
+</style>
+<body onload="carregar()">
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>
+                Ano de Nascimento: <input type="number" name="txtano" id="txtano"> <br>
+                
+            </p>
+            Sexo:
+            <input type="radio" name="sexoName" id="sexoM" checked>
+            <label for="sexoM">Masculino</label>
+            <input type="radio" name="sexoName" id="sexoF">
+            <label for="sexoF">Feminino</label> 
+            <p>
+                <input type="button" value="Verificar" id="veri" onclick="verificar()">
+            </p>
+            <div><img src="" alt="" id="foto"></div>
+        </div>
+        <div id="res">
+            Preencha os dados acima!
+            
+        </div>
+    </section>
+    <footer>
+        Feito por <a href="#">Gabriel Liz</a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
